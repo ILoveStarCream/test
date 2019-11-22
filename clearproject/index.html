@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Socitrack</title>
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+<body>
+  <header class="header">
+  </header>
+  <div class="container">
+    <div class="wrapper">
+      <section class="sidebar">
+        <div class="logo"><a href="#"><img src="img/svg/sociotrack-logo.svg" class="logo-img"></a></div>
+        <div class="current-user">
+          <div class="current-user__foto"><img src="./img/jpeg/Avatar.png"></div>
+          <div class="current-user__info">
+            <span class="current-user__name">
+              Abhisek Das
+            </span>
+            <span class="current-user__followers">
+              10,968 Followers
+            </span>
+          </div>
+        </div>
+        <ul class="column">
+          <li class="column__items column__activeitems "><a href="#" class="column__link">Dashboard</a></li>
+          <li class="column__items"><a href="#" class="column__link">Social Feed</a></li>
+          <li class="column__items"><a href="#" class="column__link">Invite Friends</a></li>
+          <li class="column__items"><a href="#" class="column__link">Settings</a></li>
+          <li class="column__items"><a href="#" class="column__link">Log out</a></li>
+        </ul>
+        <nav class="bottom-nav">
+          <ul class="bottom-nav__column">
+            <li class="bottom-nav__items"><a href="#" class="bottom-nav__link">About</a></li>
+            <li class="bottom-nav__items"><a href="#" class="bottom-nav__link">Terms</a></li>
+            <li class="bottom-nav__items"><a href="#" class="bottom-nav__link">Privacy</a></li>
+            <li class="bottom-nav__items"><a href="#" class="bottom-nav__link">Help</a></li>
+            <li class="bottom-nav__items"><a href="#" class="bottom-nav__link">Report</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="main">
+        <div class="main-search">
+          <div class="event">
+            <div class="bell">
+              <a href="#" class="bell-link"><img src="./img/svg/bell.svg" class="bell-img"></a>
+              <a href="#" class="bell-link"><span class="quantity-event">2</span></a>
+            </div>
+          </div>
+          <div class="search-wrapper">
+            <form class="input-holder">
+              <input type="text" class="search-input" placeholder="Type to search" />
+              <button class="search-icon" onclick="searchToggle(this, event);"><img src="img/svg/magnifying-glass.svg"
+                  class="search-icon-img">
+              </button>
+            </form>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          </div>
+        </div>
+        <div class="main-contant">
+          <div class="main-contant__wrapper">
+            <div class="main-contant-header">
+              <span class="email">@ABHISEK.DAS</span>
+              <a class="popup-modal" href="#test-modal">+ Add Social Profile</a>
+              <div class="main-modal mfp-hide white-popup-block" id="test-modal">
+                <a class="popup-modal-dismiss" href="#">x</a>
+                <h1 class="modal-header">Add Social Profile</h1>
+                <p class="modal-text">Add new social profile for tracking</p>
+                <span class="modal-designation">url</span>
+                <form action="" class="modal-form">
+                  <input type="text" class="modal-input" placeholder="https://twitter.com/username">
+                  <input type="submit" class="modal-input__submit" value="Lookup">
+                </form>
+              </div>
+            </div>
+            <div class="mixbtns">
+              <button type="button" class="control mixbtns-items" data-filter="all">Last day</button>
+              <button type="button" class="control mixbtns-items" data-filter=".w-week">Week</button>
+              <button type="button" class="control mixbtns-items" data-filter=".w-month">Month</button>
+            </div>
+            <div class="myMixicont" id="mymixicont">
+              <div class="mix w-last">
+                <div class="social-networks social-networks1">
+                  <span class="icon">
+                    <a href="#"><img src="img/svg/Rectangle11.svg"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers">
+                      1,701
+                    </span>
+                    <span class="number-subscribers-text">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    +4 <img src="img/svg/arrowup.svg" class="statistics-img">
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Facebook
+                    </span>
+                    <a href="#" class="social-email">@abhisek.daas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last w-week">
+                <div class="social-networks social-networks2">
+                  <span class="icon">
+                    <a href="#"><img src="img/svg/Rectangle22.svg"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers">
+                      1,567
+                    </span>
+                    <span class="number-subscribers-text">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    -3 <img src="img/svg/arrowdown.svg" class="statistics-img">
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic2.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Twitter
+                    </span>
+                    <a href="#" class="social-email">@wholetthedasout</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last w-month">
+                <div class="social-networks social-networks3">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle33.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers">
+                      1,139
+                    </span>
+                    <span class="number-subscribers-text">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    +11 <img src="img/svg/arrowup.svg" class="statistics-img">
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic3.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Instagram
+                    </span>
+                    <a href="#" class="social-email">@wholetthedasout</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last">
+                <div class="social-networks social-networks4">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle44.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers">
+                      2,160
+                    </span>
+                    <span class="number-subscribers-text">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    +39 <img src="img/svg/arrowup.svg" class="statistics-img">
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      LinkedIn
+                    </span>
+                    <a href="#" class="social-email">@abhisekd3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last w-week">
+                <div class="social-networks social-networks5">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle55.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers">
+                      3,190
+                    </span>
+                    <span class="number-subscribers-text">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    +22 <img src="img/svg/arrowup.svg" class="statistics-img">
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic5.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      YouTube
+                    </span>
+                    <a href="#" class="social-email">@TheAbhisekD</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last w-month">
+                <div class="social-networks social-networks6">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle66.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers number-subscribers-six">
+                      8,780
+                    </span>
+                    <span class="number-subscribers-text number-subscribers-sixtext">
+                      SNAP SCORE
+                    </span>
+                  </div>
+                  <span class="statistics">
+                    <!-- <img src="img/svg/arrowup.svg" class="statistics-img"> -->
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic3.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Snapchat
+                    </span>
+                    <a href="#" class="social-email">@abhisekd</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last">
+                <div class="social-networks social-networks7">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle77.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers ">
+                      1,033
+                    </span>
+                    <span class="number-subscribers-text ">
+                      followers
+                    </span>
+                  </div>
+                  <span class="statistics">
+
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/userpic3.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Google+
+                    </span>
+                    <a href="#" class="social-email">@+AbhisekDas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mix w-last w-month w-week">
+                <div class="social-networks social-networks8">
+                  <span class="social-icon">
+                    <a href="#"><img src="img/svg/Rectangle88.svg" class="icon-img"></a>
+                  </span>
+                  <div class="number-wrapper">
+                    <span class="number-subscribers ">
+                      3,073
+                    </span>
+                    <span class="number-subscribers-text ">
+                      loops
+                    </span>
+                  </div>
+                  <span class="statistics">
+
+                  </span>
+                </div>
+                <div class="social-networks-user">
+                  <div class="social__foto">
+                    <img class="img-fluid" src="./img/jpeg/Rectangle8.jpg" alt="">
+                  </div>
+                  <div class="social__info">
+                    <span class="social-network">
+                      Vine
+                    </span>
+                    <a href="#" class="social-email">@131613922824522136...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
